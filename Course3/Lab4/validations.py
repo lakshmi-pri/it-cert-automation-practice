@@ -19,7 +19,7 @@ def validate_user(username, minlen):
     if username[0].isnumeric():
         return False
     for i in range(1,len(username)):
-        if username[0] = username[i]:
+        if username[0] == username[i]:
             return False
     return True
 
@@ -28,3 +28,4 @@ print(validate_user("priya",3))
 print(validate_user("priya.pri",3))
 print(validate_user("lakshmi",3))
 print(validate_user("lakshmi.la",3))
+print(validate_user("zoho",1))
